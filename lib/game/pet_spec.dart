@@ -1,0 +1,38 @@
+import 'tycoon_engine.dart';
+
+const petSpec = TycoonSpec(
+  res: [
+    Res('coins', 'Bağış', 'Donations', 0xFFFFD60A),
+    Res('food', 'Mama', 'Pet food', 0xFFF4A261, value: 0.6),
+    Res('water', 'Su', 'Water', 0xFF48CAE4, value: 0.4),
+    Res('joy', 'Oyun', 'Play', 0xFFB5179E, value: 0.8),
+  ],
+  blds: [
+    Bld('bowl', 'Mama kabı', 'Food bowl', 15, make: {1: 0.6}, start: 1, shape: 6, color: 0xFFF4A261),
+    Bld('fountain', 'Su pınarı', 'Water fountain', 18, make: {2: 0.6}, start: 1, shape: 6, color: 0xFF48CAE4),
+    Bld('basket', 'Sepet yatak', 'Pet bed', 22, housing: 3, shape: 0, color: 0xFFDDA15E),
+    Bld('toys', 'Oyuncak', 'Toys', 40, make: {3: 0.5}, shape: 3, color: 0xFFB5179E),
+    Bld('feeder', 'Otomatik besleyici', 'Auto feeder', 90, make: {1: 2.2}, shape: 1, color: 0xFFE76F51),
+    Bld('kennel', 'Kulübe', 'Kennel', 120, housing: 8, unlockRes: 3, unlockAt: 20, shape: 0, color: 0xFF9C6644),
+    Bld('park', 'Oyun parkı', 'Play park', 260, make: {3: 2}, unlockRes: 3, unlockAt: 50, shape: 2, color: 0xFF52B788),
+    Bld('vet', 'Veteriner', 'Vet clinic', 380, boost: 0.15, unlockRes: 3, unlockAt: 90, shape: 4, color: 0xFFEF476F),
+    Bld('groom', 'Pet kuaför', 'Grooming', 520, make: {0: 4}, unlockRes: 3, unlockAt: 140, shape: 5, color: 0xFFFFAFCC),
+    Bld('shelter', 'Barınak binası', 'Shelter wing', 800, housing: 22, unlockRes: 3, unlockAt: 220, shape: 3, color: 0xFF6C757D),
+    Bld('pond', 'Gölet', 'Pond', 1000, make: {2: 6}, unlockRes: 3, unlockAt: 320, shape: 2, color: 0xFF0096C7),
+    Bld('center', 'Sahiplenme merkezi', 'Adoption center', 2200, boost: 0.4, housing: 30, unlockRes: 3, unlockAt: 520, shape: 3, color: 0xFFFFD166),
+  ],
+  startMoney: 50,
+  population: true,
+  basePop: 3,
+  baseHousing: 4,
+  needs: {1: 0.06, 2: 0.05, 3: 0.03},
+  critical: 1,
+  tax: 0.14,
+  growRate: 0.32,
+  clickMoney: 1,
+  goal: TGoal.population,
+  goalTr: 'Dost',
+  goalEn: 'Pets',
+  unitTr: 'can dost',
+  unitEn: 'pets',
+);
