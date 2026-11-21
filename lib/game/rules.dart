@@ -1,6 +1,6 @@
-import '../core/arcade.dart';
-import '../core/missions.dart';
-import '../core/stats.dart';
+import 'package:studio_core/core/arcade.dart';
+import 'package:studio_core/core/missions.dart';
+import 'package:studio_core/core/stats.dart';
 import 'pet_spec.dart';
 import 'tycoon_rules.dart';
 
