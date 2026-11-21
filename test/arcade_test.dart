@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:game_045_pet_care_simulator/core/arcade.dart';
-import 'package:game_045_pet_care_simulator/core/level_plan.dart';
+import 'package:studio_core/core/arcade.dart';
+import 'package:studio_core/core/level_plan.dart';
 import 'package:game_045_pet_care_simulator/game/tycoon_engine.dart';
 import 'package:game_045_pet_care_simulator/game/rules.dart';
 
